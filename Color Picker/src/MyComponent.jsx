@@ -3,32 +3,35 @@ import { useState } from 'react'
 
 function MyComponent() {
 
-    const [count, setCount] = useState(1990)
+    const [foods, setFoods] = useState(["Apple","Orange","Banana"])
 
-    function handlePlus () {
-        setCount(c => c + 1)
-        setCount(c => c + 1)
-        setCount(c => c + 1)
 
-    }
-    function handleDown () {
-        setCount(c => c - 1)
-        setCount(c => c - 1)
-        setCount(c => c - 1)
-    }
-    function handlereset () {
-        setCount(1990)
+
+    function handleAddFood (event){
+
+        const newFood = document.getElementById("foodInPut").value;
+        document.getElementById("foodInPut").value = "";
+        setFoods(f =>([...f, newFood]))
     }
 
+
+    function handleRemoveFood (index){
+        setFoods(foods.filter((_,i) => i !== index ));
+        
+    }
 
 
 
   return (
     <div>
-        <p>Choose your birth year{count} </p>
-        <button onClick={handlePlus}> Up </button>
-        <button onClick={handleDown}> Down </button>
-        <button onClick={handlereset}> reset </button>
+        <h2>List of Food</h2>
+        <ul>
+            {foods.map((food, index) => <li key={index} onClick={() => handleRemoveFood(index)} > 
+            {food} </li> )}
+        </ul>
+        <input type="text" id="foodInPut" placeholder="entre food name" />
+        <button onClick={handleAddFood}> Add Food</button>
+  
     </div>
   )
 }
