@@ -55,7 +55,7 @@ input{
 
 } */
 body{
-  background-color: rgba(7, 7, 7, 0.721);
+  background-color: rgba(245, 245, 245, 0.721);
 }
 
 
@@ -73,11 +73,12 @@ button{
   font-size: 1.7rem;
   font-weight: bold;
   padding: 10px 20px;
-  color: azure;
+  color: rgb(254, 254, 254);
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.5 ease;
+  background-color: black; /*change this later yo get the buttons color*/
+  transition: background-color  0.5 ease;
 }
 
 .add-button{
