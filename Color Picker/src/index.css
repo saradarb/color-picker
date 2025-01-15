@@ -54,7 +54,7 @@ input{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 } */
-body{
+/*body{
   background-color: rgba(245, 245, 245, 0.721);
 }
 
@@ -77,7 +77,7 @@ button{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: black; /*change this later yo get the buttons color*/
+  background-color: black; /*change this later yo get the buttons color*
   transition: background-color  0.5 ease;
 }
 
@@ -129,6 +129,39 @@ li{
   font-size: 1.4rem;
   margin-left: 10px;
 
+}*/
+
+
+
+
+/*Digital clock*/
+
+body{
+  background-image: url(src/Pictures/back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+
+}
+.clock-container{
+  backdrop-filter: blur(10px);
+  padding: 20px;
+
+}
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
 }
 
 

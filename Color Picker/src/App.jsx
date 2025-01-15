@@ -1,10 +1,5 @@
 import React from 'react'
-import ColorPicker from './ColorPicker'
-import MyComponent from './MyComponent'
-import Mycomp from './Mycomp'
-import ToDo from './ToDo'
-import Todo2 from './Todo2'
-import Effects from './Effects'
+import DigitalClock from './DigitalClock'
 
 function App() {
 
@@ -13,7 +8,7 @@ function App() {
    <>
   
    
-   <Effects />
+   <DigitalClock />
    
    
    </>
