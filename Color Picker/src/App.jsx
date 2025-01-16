@@ -1,5 +1,6 @@
 import React from 'react'
 import DigitalClock from './DigitalClock'
+import ComponentA from './Newcomp/ComponentA'
 
 function App() {
 
@@ -7,8 +8,8 @@ function App() {
   return (
    <>
   
+  <ComponentA />
    
-   <DigitalClock />
    
    
    </>
